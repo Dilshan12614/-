@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090713">
+<title>THENUVA X MD | Pair Web</title>
+<style>
+:root{color-scheme:dark;--bg:#090713;--panel:#151126;--panel2:#1d1733;--line:#30254c;--purple:#9b5cff;--pink:#ed68d7;--text:#f8f5ff;--muted:#a8a0bc;--green:#5df2b0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#39205e 0,transparent 55%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+.wrap{max-width:940px;margin:auto;padding:26px 18px 46px}.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:36px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.08em;font-size:14px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--purple),var(--pink));display:grid;place-items:center;box-shadow:0 8px 28px #9b5cff45}.logo svg{width:24px}.pill{border:1px solid var(--line);border-radius:99px;padding:8px 12px;color:var(--muted);font-size:12px}
+.hero{text-align:center;margin-bottom:30px}.eyebrow{color:#d0a9ff;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.hero h1{font-size:clamp(34px,7vw,58px);line-height:1.03;letter-spacing:-.055em;margin:14px 0}.hero h1 span{background:linear-gradient(90deg,#c29bff,#ff9eea);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:540px;margin:0 auto;color:var(--muted);line-height:1.7;font-size:14px}
+.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.card{background:linear-gradient(155deg,#1b1530f5,#100d1cf5);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 20px 65px #0003}.card h2{font-size:17px;margin:0 0 8px}.sub{color:var(--muted);font-size:13px;line-height:1.6;margin:0 0 22px}.field-label{display:block;font-size:12px;color:#d8d0e8;margin:0 0 9px;font-weight:700}.input-wrap{display:flex;align-items:center;gap:10px;background:#0b0913;border:1px solid #40315f;border-radius:14px;padding:0 14px}.input-wrap span{color:#c8b1f8;font-size:14px}.input-wrap input{width:100%;min-width:0;background:transparent;border:0;outline:0;color:white;padding:15px 0;font-size:15px}.btn{border:0;border-radius:14px;background:linear-gradient(100deg,#8c4bfa,#c452dc);color:#fff;font-size:14px;font-weight:800;padding:15px 18px;width:100%;margin-top:14px;cursor:pointer;box-shadow:0 10px 28px #8c4bfa30;transition:transform .15s,opacity .15s}.btn:hover{transform:translateY(-1px)}.btn:disabled{opacity:.55;cursor:wait;transform:none}.hint{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}.codebox{margin-top:18px;border:1px dashed #7353a8;background:#100b20;border-radius:16px;padding:16px;text-align:center;display:none}.code{font-size:clamp(25px,6vw,34px);letter-spacing:.12em;font-weight:900;color:#e5ccff;margin:6px 0 12px}.mini{width:auto;margin:0;padding:10px 14px;font-size:12px;border:1px solid #4b376b;background:#26183d;box-shadow:none}.statusline{display:flex;align-items:center;gap:10px;padding:13px 14px;border:1px solid var(--line);background:#100d1b;border-radius:14px;font-size:13px;margin:17px 0}.dot{width:9px;height:9px;border-radius:50%;background:#8b829d;box-shadow:0 0 0 4px #8b829d1a}.dot.ok{background:var(--green);box-shadow:0 0 0 4px #5df2b01a}.dot.wait{background:#ffc66d}.statusline strong{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700}.steps{display:grid;gap:15px}.step{display:flex;gap:12px;align-items:flex-start}.num{width:28px;height:28px;flex:none;display:grid;place-items:center;border:1px solid #5b407f;border-radius:9px;color:#d8baff;background:#27183d;font-size:12px;font-weight:900}.step b{font-size:13px;display:block;margin:2px 0 4px}.step p{font-size:12px;color:var(--muted);line-height:1.55;margin:0}.notice{border:1px solid #554022;background:#21190e;color:#e8c991;border-radius:13px;padding:13px;font-size:11px;line-height:1.6;margin-top:18px}.session{display:none;margin-top:18px}.session textarea{width:100%;height:100px;resize:vertical;background:#0b0913;border:1px solid #40315f;border-radius:12px;color:#dcd0f5;padding:12px;font-size:11px;word-break:break-all}.session .btn{margin-top:8px}.footer{text-align:center;color:#766d89;font-size:11px;margin-top:28px;line-height:1.8}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#251b39;border:1px solid #5b407f;border-radius:12px;padding:12px 16px;font-size:12px;display:none;max-width:90%;z-index:10}
+@media(max-width:720px){.wrap{padding:18px 13px 32px}.nav{margin-bottom:30px}.grid{grid-template-columns:1fr}.card{padding:20px}.hero{margin-bottom:25px}.pill{font-size:10px}.brand{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav">
+    <div class="brand"><div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 4h14v12H9l-4 4z"/><path d="m9 8 3 4 3-4"/></svg></div><div>THENUVA <span style="color:#bd8dff">X MD</span><div style="font-size:9px;color:#9285ab;letter-spacing:.2em;margin-top:3px">PAIR WEB · V2.0.0</div></div></div>
+    <div class="pill">● BAILEYS SESSION</div>
+  </nav>
+  <header class="hero">
+    <div class="eyebrow">Secure device linking</div>
+    <h1>Connect your <span>WhatsApp</span></h1>
+    <p>Generate a Pair Code, link your WhatsApp device, and export the saved session bundle for your THENUVA X MD setup.</p>
+  </header>
+  <main class="grid">
+    <section class="card">
+      <h2>Generate Pair Code</h2>
+      <p class="sub">Enter your WhatsApp number with country code. Use digits only — for Sri Lanka, start with 94.</p>
+      <form id="pairForm">
+        <label class="field-label" for="phone">WHATSAPP PHONE NUMBER</label>
+        <div class="input-wrap"><span>＋</span><input id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="94771234567" minlength="8" maxlength="15" required></div>
+        <button class="btn" id="pairBtn" type="submit">Generate Pair Code ↗</button>
+      </form>
+      <div class="codebox" id="codebox"><div class="field-label">YOUR PAIR CODE</div><div class="code" id="code">----</div><button class="btn mini" id="copyCode" type="button">Copy Pair Code</button><p class="hint">WhatsApp → Linked devices → Link a device → Link with phone number instead.</p></div>
+      <div class="statusline"><span class="dot" id="dot"></span><span id="statusText">Waiting for a pairing request</span><strong id="statusTag">READY</strong></div>
+      <div class="session" id="session"><label class="field-label" for="exportToken">SESSION EXPORT TOKEN (from Replit Secrets)</label><div class="input-wrap"><span>🔒</span><input id="exportToken" type="password" autocomplete="off" placeholder="Enter your private export token"></div><button class="btn mini" id="unlockSession" type="button" style="margin:10px 0 14px">Unlock Session Export</button><label class="field-label">SESSION ID BUNDLE</label><textarea id="sessionText" readonly></textarea><button class="btn" id="copySession" type="button">Copy Session ID</button><p class="hint">Keep this secret. The receiving bot must support THENUVA_SESSION_BUNDLE_V1; this is not a legacy creds-only session ID.</p></div>
+      <button class="btn mini" id="refresh" type="button" style="margin-top:12px">Refresh connection status</button>
+    </section>
+    <aside class="card">
+      <h2>How to connect</h2><p class="sub">Follow these steps on the phone that owns the WhatsApp account.</p>
+      <div class="steps">
+        <div class="step"><div class="num">01</div><div><b>Enter your number</b><p>Include the country code. Do not include spaces or a plus sign.</p></div></div>
+        <div class="step"><div class="num">02</div><div><b>Generate your Pair Code</b><p>Wait for the code to appear on this page.</p></div></div>
+        <div class="step"><div class="num">03</div><div><b>Open Linked devices</b><p>In WhatsApp, choose Link a device, then the phone-number linking option.</p></div></div>
+        <div class="step"><div class="num">04</div><div><b>Enter the code</b><p>Type the Pair Code into WhatsApp and wait for the connection status to update.</p></div></div>
+        <div class="step"><div class="num">05</div><div><b>Export your session</b><p>When connected, copy the session bundle and keep it private.</p></div></div>
+      </div>
+      <div class="notice"><b>Security notice</b><br>Never share your Pair Code or Session ID with anyone. Anyone who gets session credentials may be able to access your WhatsApp account. Use only your own account.</div>
+    </aside>
+  </main>
+  <footer class="footer">THENUVA X MD · POWERED BY Dilshan Ashinsa<br>Run on your own Replit workspace. Keep credentials private.</footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const $ = id => document.getElementById(id);
+let toastTimer;
+function toast(msg){$('toast').textContent=msg;$('toast').style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').style.display='none',3200)}
+async function api(url, options={}) {
+  const headers={'Content-Type':'application/json'};
+  if(url.startsWith('/api/session')) headers['x-session-export-token']=$('exportToken')?.value || '';
+  const res=await fetch(url,{headers,...options});
+  const data=await res.json().catch(()=>({error:'Unexpected server response'}));
+  if(!res.ok) throw new Error(data.error||'Request failed');
+  return data;
+}
+function setStatus(data){
+  const dot=$('dot'), text=$('statusText'), tag=$('statusTag');
+  dot.className='dot'+(data.connected?' ok':data.connecting?' wait':'');
+  if(data.connected){text.textContent='WhatsApp connected successfully';tag.textContent='CONNECTED';$('session').style.display='block';}
+  else if(data.connecting){text.textContent='Starting secure WhatsApp connection…';tag.textContent='CONNECTING';}
+  else if(data.pairingCode){text.textContent='Pair Code generated — enter it in WhatsApp';tag.textContent='PAIR CODE';}
+  else if(data.lastError){text.textContent='Connection needs attention';tag.textContent='ERROR';}
+  else{text.textContent='Waiting for a pairing request';tag.textContent='READY';}
+}
+$('pairForm').addEventListener('submit',async e=>{
+  e.preventDefault();const phone=$('phone').value.replace(/\D/g,'');const btn=$('pairBtn');
+  btn.disabled=true;btn.textContent='Generating…';
+  try{const data=await api('/api/pair',{method:'POST',body:JSON.stringify({phone})});$('code').textContent=data.pairingCode;$('codebox').style.display='block';toast('Pair Code generated. Enter it in WhatsApp.');await refreshStatus();}
+  catch(err){toast(err.message);}
+  finally{btn.disabled=false;btn.textContent='Generate Pair Code ↗';}
+});
+async function refreshStatus(){try{setStatus(await api('/api/status'));}catch(e){toast('Cannot reach server. Refresh the Replit app.');}}
+async function loadSession(){try{const data=await api('/api/session');$('sessionText').value=data.sessionId;toast('Session export unlocked. Keep it private.');}catch(e){$('sessionText').value='';toast(e.message);}}
+async function copy(id){const value=$(id).value||$(id).textContent;try{await navigator.clipboard.writeText(value);toast('Copied to clipboard');}catch(e){toast('Select and copy the text manually.');}}
+$('copyCode').onclick=()=>copy('code');$('copySession').onclick=()=>copy('sessionText');$('refresh').onclick=refreshStatus;$('unlockSession').onclick=loadSession;
+refreshStatus();setInterval(refreshStatus,4000);
+</script>
+</body>
+</html>
